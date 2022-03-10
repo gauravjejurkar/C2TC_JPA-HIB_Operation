@@ -13,20 +13,17 @@ public class Main {
 		EntityManager em=emf.createEntityManager();
 		
 		em.getTransaction().begin();
+		
 		Employee a= new Employee();
 	
-		a.setId(105);
-		a.setName("Rajesh");
+		a.setId(106);
+		a.setName("Sumit");
 		a.setSalary(11000);
-		em.persist(a);
+		em.persist(a);			
 		
-	
 		
 		em.getTransaction().commit();
-		
-		
-		
-		
+			
 		em.close();
 		emf.close();
 		
